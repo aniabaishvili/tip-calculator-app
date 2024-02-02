@@ -112,7 +112,7 @@ input{
     padding-top: 20px;
 }
 
-.box1 p, .box2 p, .box4 p, .box5 p{
+#box1 p, #box2 p, #box4 p, #box5 p{
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
