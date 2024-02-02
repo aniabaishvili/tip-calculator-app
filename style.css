@@ -7,6 +7,8 @@
 body{
     background-color: #c5e4e7;
     font-style: 'Space Mono';
+    
+    
 }
 
 
@@ -15,6 +17,15 @@ body{
     width:87px;
     height:54px;
 }
+.zero-message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #e17457;
+    font-size: 16px;
+    display: none;
+    font-weight: 700;
+  }
 
 .container{
     background-color:white;
@@ -110,6 +121,7 @@ input{
     width:356px;
     height:226px;
     padding-top: 20px;
+    
 }
 
 #box1 p, #box2 p, #box4 p, #box5 p{
@@ -122,7 +134,7 @@ input{
     padding: 5px 0px 0px 0px;
 }
 
-.costum{
+.custom{
     width:146px;
     height:48px;
     border-radius: 5px;
@@ -144,6 +156,7 @@ color:#547878;
     width:311px;
     height: 100px;
     margin: 10px auto;
+    position: relative;
 }
 
 #num-people{
@@ -194,6 +207,7 @@ span{
     width:96px;
 }
 
+
 .reset{
     width:266px;
     height:48px;
@@ -231,6 +245,7 @@ input:focus {
     .reset{
         background-color: #0d686d;
     }
+    
 }
 
 
@@ -290,5 +305,14 @@ input:focus {
    .tip-person p, .total-person p{
     font-size: 48px;
    }
+   .zero-message {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    color: #e17457;
+    font-size: 16px;
+    display: none;
+    font-weight: 700;
+  }
 }
 
