@@ -67,7 +67,7 @@ input{
     margin: auto;
 }
 
-.box1, .box2, .box4, .box5{
+#box1, #box2, #box4, #box5{
     width:146px;
     height:48px;
     border-radius: 5px;
@@ -80,7 +80,7 @@ input{
     
 }
 
-.box3{
+#box3{
     width:146px;
     height:48px;
     border-radius: 5px;
@@ -90,7 +90,7 @@ input{
     border-style: none;
 }
 
-.box3 p{
+#box3 p{
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
