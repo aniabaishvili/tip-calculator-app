@@ -1,6 +1,6 @@
 const billInput = document.getElementsById("Bill");
 const customTipInput = document.querySelector('.costum');
-const tipInputs = Array.from(document.getElementsByClassName("button"));
+const tipInputs = Array.from(document.getElementsByClassName(".button"));
 const costum = document.getElementsByClassName('.costum');
 const numPeopleInput = document.getElementById('num-people');
 const resultTip = document.getElementsByClassName('.tip-person');
