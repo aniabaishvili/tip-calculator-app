@@ -1,11 +1,12 @@
 const billInput = document.getElementById("Bill");
-const customTipInput = document.getElementsByClassName('custom');
+const customTipInput = document.querySelector("custom");
 const tipInputs = Array.from(document.getElementsByClassName("button"));
-const zeroMessage = document.getElementById('zeroMessage');
-const numPeopleInput = document.getElementById('num-people');
-const resultTip = document.getElementsByClassName('tip-person');
-const resultTotal = document.getElementsByClassName('total-person');
-const resetButton = document.getElementsByClassName('reset')[0];
+const zeroMessage = document.getElementById("zeroMessage");
+const numPeopleInput = document.getElementById("num-people");
+const resultTip = document.getElementById("tip-person");
+const resultTotal = document.getElementById("total-person");
+const resetButton = document.getElementsByClassName("reset")[0];
+const numberPeopleInput = document.getElementsByClassName("number-people");
 
 
 
@@ -19,10 +20,13 @@ billInput.addEventListener("input",(event) => {
     
 });
 
-customTipInput.addEventListener("input", (event) => {
-    tipValue = parseInt(event.target.value);
-    calculation();
-    
+
+document.addEventListener('DOMContentLoaded', function() {
+    const customTipInput = document.querySelector('.custom');
+    customTipInput.addEventListener("input", (event) => {
+        tipValue = parseInt(event.target.value);
+        calculation();
+    });
 });
 
 tipInputs.forEach((button) => {
@@ -48,10 +52,10 @@ numPeopleInput.addEventListener("input",(event) => {
 function calculation(){
     if(peopleValue != 0) {
     let tipResultValue = (billValue * (tipValue /100)) / peopleValue;
-    let totalValue =(billValue / peopleValue) + tipResultValue 
+    let totalValue = (billValue / peopleValue) + tipResultValue ;
 
     resultTip.innerText = `$${tipResultValue.toFixed(2)}`;
-    resultTotal.innerText = `$${tipResultValue.toFixed(2)}`;
+    resultTotal.innerText = `$${totalValue.toFixed(2)}`;
     } else {
         resultTip.innerText = "$0.00";
         resultTotal.innerText = "$0.00";
